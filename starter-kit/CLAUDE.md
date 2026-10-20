@@ -84,16 +84,17 @@ A decision worth keeping is written to `DECISIONS.md` when it is made (the
   launching; a multi-stage fan-out is capped on the total. Anything over
   about two minutes of real compute runs on my machine, not in the agent's
   sandbox.
-- **Never copy a folder tree or an archive file over a branch.** Another
-  thread may have changed it. Before editing a shared repository, fetch and
-  read the log of its main branch; if something you expect to find there is
-  missing, stop and tell me. Work on a branch and open a pull request.
-- **Each thread owns its own branches.** With two threads on one
-  repository, I am told which thread owns which.
+- **If the project is in git, never paste a whole folder over the main
+  version of it.** Another thread may have changed that version. Before
+  editing, fetch it and read its recent history; if something you expect to
+  find there is missing, stop and tell me. Make your changes on a separate
+  line of work (a branch) and ask me to merge them.
+- **If two threads work on one git project, each owns its own branches,**
+  and I am told which thread owns which.
 - **Keep the only copy of any work out of temporary folders,** the agent's
   own scratch directory included. The operating system deletes them (macOS
-  clears /private/tmp after about three days). Work worth keeping is
-  committed and pushed, or lives in a folder I chose.
+  clears /private/tmp after about three days). Work worth keeping lives in a
+  folder I chose or, if the project is in git, is committed and pushed.
 - **Shared files are written at stopping points only.** The decision log,
   the open-items list and the failure log are shared across parallel
   threads, and continuous concurrent edits clobber. Read the current file

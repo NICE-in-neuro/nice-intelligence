@@ -5,6 +5,30 @@ project with an AI coding agent: weeks or months, many sessions, and
 results that have to be right. This page assumes you know nothing about
 where the pattern came from. You do not need to.
 
+## Fastest way
+
+Let your AI agent do the first hour for you.
+
+1. Make a new, empty folder for your project and put this unzipped folder
+   inside it.
+2. Open that project folder in your AI agent tool (Claude Code, or
+   anything equivalent).
+3. Paste this to the agent:
+
+       Find the folder in this project that holds the NICE intelligence
+       kit (its name starts with nice-intelligence) and read its
+       START_HERE.md. Set this project up for me by doing its first hour
+       with me: copy the starter kit into this folder without overwriting
+       anything I already have, ask me what steps 2 and 3 need, one
+       question at a time in plain words, write my answers into the files,
+       run ./run_checks.sh if you can, and then tell me in five lines what
+       I now have.
+
+If you are the agent and were sent here by that message, do "The first
+hour" below with the person, in that order.
+
+Prefer to do it yourself? The same steps are below.
+
 ## The problem in three sentences
 
 An AI agent has no memory across sessions except what is written down.
